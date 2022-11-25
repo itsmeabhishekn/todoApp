@@ -1,22 +1,24 @@
+<app-navbar></app-navbar>
+
 <div class="container">
     <div class="row g-3 mt-5">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <table class="table">
                 <thead>
                 <tr>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
+                    <th>UserID</th>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Completed Status</th>
                 </tr>
             </thead>
            
             <tbody>
-                <tr>
-                    <th>a</th>
-                    <th>b</th>
-                    <th>c</th>
-                    <th>d</th>
+                <tr *ngFor="let i of todos">
+                    <td>{{i.userId}}</td>
+                    <th>{{i.id}}</th>
+                    <th>{{i.title}}</th>
+                    <th>{{i.completed}}</th>
                 </tr>
             </tbody>
             </table>
