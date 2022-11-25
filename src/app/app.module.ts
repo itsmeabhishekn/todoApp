@@ -5,7 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { ViewTodoComponent } from './view-todo/view-todo.component';
+import { RouterModule ,Route,Routes} from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
+
+const myRoute:Routes = [
+  {path:"",component:AddTodoComponent},
+  {path:"add",component:AddTodoComponent},
+  {path:"view",component:ViewTodoComponent}
+
+]
 
 @NgModule({
   declarations: [
