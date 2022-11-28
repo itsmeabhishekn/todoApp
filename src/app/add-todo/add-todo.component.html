@@ -6,33 +6,35 @@
 
                 <label for="" class="form-label">UserId</label>
 
-                <input type="text" class="form-control">
+                <input name="userid" [(ngModel)]="userid" type="text" class="form-control">
 
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> 
 
                 <label for="" class="form-label">Id</label>
 
-                <input type="text" class="form-control">
+                <input name="id" [(ngModel)]="id" type="text" class="form-control">
 
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> 
 
                 <label for="" class="form-label">Title</label>
 
-                <input type="text" class="form-control">
+                <input name="title" [(ngModel)]="title" type="text" class="form-control">
 
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> 
 
                 <label for="" class="form-label">Status</label>
 
-                <input type="text" class="form-control">
+                <input name="status" [(ngModel)]="status" type="text" class="form-control">
 
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> 
-
-                <button class="btn btn-success"> Add ToDo </button>
+                <div class="row g-3 mt-5">
+                    <button (click)="readValues()" class="btn btn-success"> Add ToDo </button>
+                </div>
+                
 
             </div>
         </div>
